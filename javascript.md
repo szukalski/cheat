@@ -1,6 +1,6 @@
 # JavaScript
 
-## Types
+## Basics
 
 ### Object
 
@@ -47,4 +47,64 @@ let data = {
   array1: [[1,2], [3,4]],
   array2: [[5,6], [7,8]]
 };
+```
+
+### Operators
+
+```js
+let count = 0;
+count++;    // count + 1;
+count--;    // count - 1;
+count += 2; // count + 2;
+count *= 3; // count * 3;
+
+let x = 2, y = 33;
+x === y   // false
+x !== y   // true
+x < y     // true
+x <= y    // true
+false === (x > y) // true: false equals false
+(x === 2) && (y ===3) // true
+(x > 3) || (y < 3) // false
+!(x === y) // true
+```
+
+### Functions
+
+```js
+function plus1(x) {
+  return x + 1;
+}
+
+// Can assign a function to a var
+let square = function(x) {
+  return x * x;
+}
+```
+
+#### Arrow Functions
+
+```js
+const plus1 = x => x + 1; // map x to output x +1
+const square = x => x * x;
+```
+
+#### Methods
+
+```js
+points.dist = function() {
+  let p1 = this[0];
+  let p2 = this[1];
+  let a = p2.x-p1.x;
+  let b = p2.y-p1.y;
+  return Math.sqrt(a*a + b*b); // a^2 + b^2 = c^2
+}
+points.dist()
+```
+
+### Control statements
+
+```js
+if (x >= 0) {
+}
 ```
