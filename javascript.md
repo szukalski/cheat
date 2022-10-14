@@ -106,5 +106,27 @@ points.dist()
 
 ```js
 if (x >= 0) {
+  // Do something
 }
+else {
+  // Do something else
+}
+
+function sum(array) {
+  let sum = 0;
+  for(let x of array) { // Loop over array, assigning each element to x
+    sum += x;
+  }
+  return sum;
+}
+
+let x = 5;
+while(x > 1) {
+  // Do something
+  x--;
+}
+
+let n = 5;
+for(i=1, i <= n; i++)
+  // Do something
 ```
